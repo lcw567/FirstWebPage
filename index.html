@@ -16,6 +16,11 @@
 		
 	</head>
 	<body>
+		<script>
+			window.onload = function() {
+				alert('서울 여행 가이드에 오신 것을 환영합니다!');
+			};
+		</script>
 
 
 		<!-- Header -->
@@ -41,7 +46,7 @@
 								<div class="inner">
 									<h2>서울 여행 가이드</h2>
 									<div class="video-container">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/bPfcqKgDpxs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<iframe width="1000" height="500" src="https://www.youtube.com/embed/bPfcqKgDpxs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									</div>
 								</div>
 							</section>
@@ -161,6 +166,34 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		
+			<style>
+				.navbar {
+					overflow: hidden;
+					background-color: #52aeeb;
+					position: fixed;
+					top: 0;
+					width: 100%;
+					z-index: 1000;
+				}
+			
+				.navbar a {
+					float: left;
+					display: block;
+					color: #f2f2f2;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;
+				}
+			</style>
+			
+			<div class="navbar">
+			  <a href="#traffic">교통정보</a>
+			  <a href="#Weather">날씨정보</a>
+			  <a href="#Food">식당정보</a>
+			  <a href="#Tour">관광지정보</a>
+			</div>
 
 	</body>
 </html>
